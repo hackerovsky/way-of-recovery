@@ -26,6 +26,7 @@ class _HomeState extends State<Home> {
           height: 100,
         ),
         body: _children[_currentIndex], // new
+        backgroundColor: Colors.white,
         bottomNavigationBar: BottomNavigationBar(
           onTap: onTabTapped, // new
           currentIndex: _currentIndex, // new
@@ -73,7 +74,7 @@ class MyCustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             ),
           ),
             child: Container(
-              color: Colors.white,
+              color: Color(0xFFFFFFFF),
               width: MediaQuery.of(context).size.width,
               padding: EdgeInsets.only(top:38, bottom: 37, left: 38, right: 38),
               child: Center(

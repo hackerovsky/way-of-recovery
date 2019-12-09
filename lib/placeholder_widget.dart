@@ -14,7 +14,7 @@ class PlaceholderWidget extends StatelessWidget {
       children: [
         Column(children: [
           Container(
-            color: color,
+            color: Color(0xFFFFFFFF),
             child: Container(
               child: Container(
                 height: 161,
@@ -30,6 +30,7 @@ class PlaceholderWidget extends StatelessWidget {
             ),
           ),
           Container(
+            color: Color(0xFFFFFFFF),
             height: 54,
             padding: EdgeInsets.only(bottom: 24),
             child: Center(
@@ -40,6 +41,7 @@ class PlaceholderWidget extends StatelessWidget {
             ),
           ),
           Container(
+            color: Color(0xFFFFFFFF),
             height: 72,
             padding: EdgeInsets.only(bottom: 36),
             child: Center(
@@ -53,6 +55,7 @@ class PlaceholderWidget extends StatelessWidget {
             ),
           ),
           Container(
+            color: Color(0xFFFFFFFF),
             height: 194,
             padding: EdgeInsets.only(bottom: 36),
             child: Column(
@@ -134,6 +137,7 @@ class PlaceholderWidget extends StatelessWidget {
             ),
           ),
           Container(
+            color: Color(0xFFFFFFFF),
             height: 228,
             padding: EdgeInsets.only(bottom: 36, left: 16, right: 16),
             child: Column(
@@ -188,6 +192,7 @@ class PlaceholderWidget extends StatelessWidget {
             ),
           ),
           Container(
+            color: Color(0xFFFFFFFF),
             height: 218,
             padding: EdgeInsets.only(bottom: 36, left: 16, right: 16),
             child: Column(
@@ -257,6 +262,7 @@ class PlaceholderWidget extends StatelessWidget {
             ),
           ),
           Container(
+            color: Color(0xFFFFFFFF),
             height: 228,
             padding: EdgeInsets.only(bottom: 36, left: 16, right: 16),
             child: Column(
