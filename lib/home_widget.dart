@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'placeholder_widget.dart';
+import 'first_tab.dart';
 import 'second_tab.dart';
 
 class Home extends StatefulWidget {
@@ -12,9 +12,9 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int _currentIndex = 0;
   final List<Widget> _children = [
-    PlaceholderWidget(Colors.white),
+    FirstTabWidget(Colors.white),
     SecondTab(Colors.red),
-    PlaceholderWidget(Colors.green)
+    FirstTabWidget(Colors.green)
   ];
 
   @override

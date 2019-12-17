@@ -6,7 +6,8 @@ class CheckWidget extends StatefulWidget {
 }
 
 class _CheckWidgetState extends State<CheckWidget> {
-  bool _isChecked = true;
+  final checkState = String;
+  bool _isChecked = false;
 
   void _toggleCheck() {
   setState(() {

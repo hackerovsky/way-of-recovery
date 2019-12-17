@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'todolist.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+// import 'package:flutter_svg/flutter_svg.dart';
 
 class SecondTab extends StatelessWidget {
-  bool _sel = false;
+  // bool _sel = false;
   final Color color;
 
   SecondTab(this.color);
