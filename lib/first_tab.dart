@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'todolist.dart';
 import 'ctodolist.dart';
+import 'first_tab_questions.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
 
 class FirstTabWidget extends StatelessWidget {
@@ -67,7 +68,12 @@ class FirstTabWidget extends StatelessWidget {
                   height: 48,
                   child: new MaterialButton(
                       height: 48,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => FirstTabQWidget(Colors.green)),
+                        );
+                      },
                       textColor: Colors.white,
                       padding: EdgeInsets.only(bottom: 0),
                       child: Container(
