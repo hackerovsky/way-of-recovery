@@ -1,0 +1,39 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'dart:async';
+import 'authentication_state.dart';
+import 'authentication_service.dart';
+
+class SignInPage extends StatelessWidget {
+  final StreamController<AuthenticationState> _streamController;
+  AuthenticationService _authenticationService = new AuthenticationService();
+
+  SignInPage(this._streamController);
+
+  signIn() async {
+    _streamController.add(AuthenticationState.authenticated());
+    var result =
+        await _authenticationService.authenticate("username", "password");
+    if (result != 'fff') {
+      _streamController.add(AuthenticationState.authenticated());
+      _streamController.add(AuthenticationState.name());
+      return result;
+    }
+    else {
+      _streamController.add(AuthenticationState.failed());
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Shitty')),
+      body: Center(
+        child: RaisedButton(
+          child: Text('Sign in'),
+          onPressed: signIn,
+        ),
+      ),
+    );
+  }
+}

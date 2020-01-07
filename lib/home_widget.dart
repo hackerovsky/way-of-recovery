@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'first_tab.dart';
-import 'second_tab.dart';
+import 'tab_first.dart';
+import 'tab_second.dart';
+import 'tab_third.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -14,7 +15,7 @@ class _HomeState extends State<Home> {
   final List<Widget> _children = [
     FirstTabWidget(Colors.white),
     SecondTab(Colors.red),
-    FirstTabWidget(Colors.green)
+    // ThirdTab()
   ];
 
   @override
